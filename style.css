@@ -109,6 +109,8 @@ a:hover {
 .container3 {
     display: flex;
     flex-flow:wrap;
+    margin-left: 20px;
+    justify-content: center;
 }
 
 .location-item {
@@ -116,7 +118,7 @@ a:hover {
     min-width: 300px;
     background-color: rgba(0, 0, 0, 0.90);
     padding: 50px 20px 50px 20px;
-    margin: 15px auto;
+    margin: 15px 20px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -147,7 +149,7 @@ footer {
     padding: 20px;
 }
 
-/* --------------- Nav Bar responsiveness --> Make navbar appear in a column instead of inline ---------------   */
+/* --------------- Nav Bar responsiveness --> Make navbar appear in a column instead of inline when screen shrinks ---------------   */
 
 @media only screen and (max-width: 600px) {
     
