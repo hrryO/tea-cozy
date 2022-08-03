@@ -1,9 +1,9 @@
-
 * {
     margin: 0;
+    padding: 0;
 }
 
-/* General styles */
+/* --------------- General styles ---------------  */
 
 body {
     font-family: Helvetica;
@@ -11,9 +11,10 @@ body {
     color: seashell;
     background-color:rgba(0, 0, 0, 0.95);
     text-align: center;
+    margin-top: 69px;
 }
 
-/* Links */
+/* --------------- Links href ---------------  */
 
 a { 
     color: seashell; 
@@ -23,15 +24,7 @@ a:hover {
     color: grey;
 }
 
-a:active {
-    color: rgb(23, 23, 23);
-}
-
-a::after {
-    color: rgb(7, 7, 7);
-}
-
-/* Nav bar */
+/* --------------- Nav bar ---------------  */
 
 .navbar {
     display: flex;
@@ -55,17 +48,12 @@ a::after {
     padding: 7px 10px;
 }
 
-/* Our Mission section*/
-
-.mission {
-    margin-top: 69px;
-}
+/* --------------- Our Mission section --------------- */
 
 .container1 {
     margin: auto;
     background-image: url(https://content.codecademy.com/courses/freelance-1/unit-4/img-mission-background.jpg);
     background-position: center;
-    background-repeat: no-repeat;
     display: flex;
     max-width: 1200px;
     height: 700px;
@@ -73,7 +61,7 @@ a::after {
 
 .headtext {
     margin: auto;
-    background-color: rgba(0, 0, 0, 0.95);
+    background-color: rgba(0, 0, 0, 0.9);
     width: 100%;
 }
 
@@ -82,7 +70,7 @@ a::after {
     padding: 15px;
 }
 
-/* tea of the month section */
+/* --------------- tea of the month section ---------------  */
 
 .container2 {
     max-width: 1000px;
@@ -107,50 +95,43 @@ a::after {
     padding-bottom: 20px;
 }
 
-/*  Locations section */
+/*  --------------- Locations section ---------------  */
 
-.location {
+.background {
     max-width: 1200px;
-    height: 500px;
+    min-height: 500px;
+    margin: auto;
     background-image: url(https://content.codecademy.com/courses/freelance-1/unit-4/img-locations-background.jpg);
     background-position: center;
-    background-repeat: no-repeat;
     background-size: cover;
-    margin: auto;
 }
 
 .container3 {
-    min-height: 300px;
-    width: 1000px;
     display: flex;
-    margin: auto;
-    justify-content: space-between;
+    flex-flow:wrap;
 }
 
 .location-item {
-    height: 300px;
+    min-height: 300px;
+    min-width: 300px;
     background-color: rgba(0, 0, 0, 0.90);
-    padding: 20px;
+    padding: 50px 20px 50px 20px;
+    margin: 15px auto;
     box-sizing: border-box;
-    flex-basis: 30%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.location-text h2 {
-    padding-bottom: 15px;
+.background h2 {
     padding-top: 50px;
 }
 
-.location-item p {
-   padding-top: 30px;
-}
-
-/* Footer section */
+/* --------------- Footer section ---------------  */
 
 .cozy {
     height: 200px;
+    text-align: center;
 }
 
 .cozy h2 {
@@ -163,6 +144,29 @@ a::after {
 
 footer {
     text-align: left;
-    margin-left: 20px;
-    padding-bottom: 20px;
+    padding: 20px;
 }
+
+/* --------------- Nav Bar responsiveness --> Make navbar appear in a column instead of inline ---------------   */
+
+@media only screen and (max-width: 600px) {
+    
+    .navbar {
+        display: block;
+    }
+
+    .navbar li {
+        font-size: 18px;
+        padding: 8px;
+        display: block;
+    }
+
+    item.nav {
+        display: block;
+    }
+
+    li {
+        list-style-type: none;
+    }
+}
+
