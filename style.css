@@ -63,7 +63,7 @@ a::after {
 
 .container1 {
     margin: auto;
-    background-image: url(./images/img-mission-background.jpg);
+    background-image: url(https://content.codecademy.com/courses/freelance-1/unit-4/img-bedford-bizarre.jpg);
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
@@ -112,7 +112,7 @@ a::after {
 .location {
     max-width: 1200px;
     height: 500px;
-    background-image: url(./images/img-locations-background.jpg);
+    background-image: url(https://content.codecademy.com/courses/freelance-1/unit-4/img-locations-background.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
